@@ -979,10 +979,10 @@ Kirki::add_field( $config_id, array(
 		'background-size'       => 'cover',
 		'background-attachment' => 'scroll',
 	),
-	'transport'     => 'postMessage',
+	'transport'     => 'auto',
     'output'        => array(
         array(
-            'element'  => '#colophon',
+            'element'  => 'footer#colophon',
             'property' => 'background',
         ),
     ),
