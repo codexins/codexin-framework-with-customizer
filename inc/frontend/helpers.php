@@ -79,7 +79,7 @@ if ( ! function_exists( 'codexin_comment_function' ) ) {
 
                         <div class="comment-meta">
                             <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
-                                <time datetime="<?php the_time('c'); ?>" itemprop="datePublished">
+                                <time datetime="<?php echo get_the_time('c'); ?>" itemprop="datePublished">
                                     <?php printf( esc_html__('%1$s at %2$s', 'TEXT_DOMAIN'), get_comment_date(), get_comment_time() ); ?>
                                 </time>
                             </a>

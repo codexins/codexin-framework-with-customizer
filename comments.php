@@ -38,7 +38,7 @@ if ( post_password_required() ) {
 					comments_number(
 					esc_html__( 'This post has no comments', 'TEXT_DOMAIN' ), 
 					esc_html__( 'This post has One Comment', 'TEXT_DOMAIN' ), 
-					wp_kses_post__( 'This post has <span>%</span> Comments', 'TEXT_DOMAIN' )
+					wp_kses_post( 'This post has <span>%</span> Comments', 'TEXT_DOMAIN' )
 					); 
 				?>
 			</h3>
